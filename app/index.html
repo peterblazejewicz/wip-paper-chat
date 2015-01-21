@@ -19,13 +19,19 @@
     <link rel="import" href="elements/elements.html">
     <!-- endbuild-->
   </head>
-  <body unresolved>
-    <div class="hero-unit">
-      <yo-greeting></yo-greeting>
-      <p>You now have</p>
-      <yo-list></yo-list>
-    </div>
-
+  <body fullbleed unresolved>
+    <core-scaffold>
+      <core-header-panel navigation flex>
+        <core-toolbar class="tall">
+        </core-toolbar>
+      </core-header-panel>
+      <div tool layout horizontal flex>
+        <span flex>Kitten Anonymous</span>
+        <core-icon icon="account-circle"></core-icon>
+        <span></span>
+      </div>
+      <div flex></div>
+    </core-scaffold>    
     <!-- build:js scripts/app.js -->
     <script src="scripts/app.js"></script>
     <!-- endbuild-->
